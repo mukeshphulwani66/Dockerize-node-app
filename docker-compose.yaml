@@ -1,0 +1,12 @@
+services:
+   api:
+      build: 
+         context: ./node-app
+         dockerfile: Dockerfile
+      image: node-api-img:1.0.0
+      ports:
+        - "5000:5000"
+      volumes:
+        - ./node-app:/app
+      environment:
+         API_KEY: myapikeyvlaueesdfsdfsdf
